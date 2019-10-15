@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="description" content="ساجد لله"/>
+        <meta name="keywords" content="ساجد لله , فتاوى الشيخ ابن العثيمين , فتاوى الشيخ ابن باز , فتاوى الشيخ الألباني , حصن المسلم , حصن المسلم للأطفال , أذكار المسلم اليومية , القرآن الكريم"/>
+    	<title>ساجد لله أذكار المسلم فتاوى</title>
+    	<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="jsjquery-3.4.1.min.js"></script>
+<center><script language="JavaScript">
+var fixd;
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 1;
+}
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day + " " + months[this.month - 1]+ " " + this.year;
+}
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed() + 1;
+return i;
+}
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("جانفي","فيفري","مارس","أفريل","ماي","جوان","جويلية","أوت","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+document.write(" م  الموافق ل " + h.toString() + "هـ");
+</script>
+  
+<script>
+var dayarray=new Array("","","","","","","")
+var montharray=new Array("","","","","","","","","","","","")
+function getthedate(){
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var hours=mydate.getHours()
+var minutes=mydate.getMinutes()
+var seconds=mydate.getSeconds()
+var dn="H:i"
+if (hours>=24)
+dn="PM"
+if (hours>12){
+hours=hours-12
+}
+if (hours==1)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+var cdate="<small><font color='3F6F97' face='MS Sans Serif'>"+hours+":"+minutes+":"+seconds+"</font></small>"
+if (document.all)
+document.all.clock.innerHTML=cdate
+else if (document.getElementById)
+document.getElementById("clock").innerHTML=cdate
+else
+document.write(cdate)
+}
+if (!document.all&&!document.getElementById)
+getthedate()
+function goforit(){
+if (document.all||document.getElementById)
+setInterval("getthedate()",1000)
+}
+         </script>
+<span id="clock"><body  rightmargin="0" leftmargin="0" topmargin="0" marginwidth="0"  onLoad="goforit()"></span>
+
+ </center>
+
+
+    </head>
+<body>
+	<div>
+		<body background="image.jpg"
+	</div>
+	
+    <div class="contaimer" >
+    	<header id="nnav">
+    		
+	        <nav>
+		        <ul>
+		        	<li class="active"><a href="sit.html">الصفحة الرئيسية</a> </li>
+		        	<li><a href="القرآن الكريم.html">القرآن الكريم</a> </li>
+		        	<li><a href="أذكار المسلم اليومية.html">أذكار المسلم اليومية</a> </li>
+		        	<li><a href="atfal.html">حصــــــن المسلـــــم للأطفــال</a> </li>
+			        <li><a href="fatawa.html">فتاوى أهــل السنـــــة والجماعـــة</a> </li>
+			        
+			        
+			        
+			        
+		        </ul>
+	        </nav>
+            </header>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body id="para">
+  	<section id="img3">
+  		
+  	</section>
+
+
+
+   
+    <p>
+      <h1>أذكار قبل الوضوء و بعد الفراغ منه و أذكار الآذان و بعد السلام من الصلاة</h1>
+      <h2>الذكر قبل الوضوء</h2>
+      - بسم الله
+      <div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	<h2>الذكر بعد الفراغ من الوضوء </h2>
+	- أشهد أن لا إله إلا الله وحده لا شريك له ، وأشهد أن محمداً عبده ورسوله
+
+<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	- وزاد الترمذي بعد ذكر الشهادتين :"اللهم اجعلني من التوابين واجعلني من المتطهرين
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	- سبحانك اللهم وبحمدك أشهد أن لا إله إلا أنت أستغفرك وأتوب إليك
+   <div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+
+	<h2>أذكار الأذان </h2>
+	- يقول مثل ما يقول المؤذن إلا في "حي على الصلاة ، وحي على الفلاح" فيقول "لا حول ولا قوة إلا بالله
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	-يصلي على النبي صلى الله عليه وسلم بعد فراغه من إجابة المؤذن
+
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+- اللهم رب هذه الدعوة التامة ،والصلاة القائمة، آت محمداً الوسيلة والفضيلة، وأبعثه مقاماً محموداً الذي وعدته،  إنك لا تخلف الميعاد 
+<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	- يدعو لنفسه بين الأذان والإقامة فإن الدعاء حينئذٍ لا يرد 
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+	<h2>الأذكار بعد السلام من الصلاة</h2>
+	- أستغفر الله " ثلاثاً .." اللهم أنت السلام ، ومنك السلام ، تباركت يا ذا الجلال والإكرام
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+
+	- لا إله إلا الله وحده لا شريك له،له الملك وله الحمد وهو على كل شئ قدير،لا حول ولا قوة إلا بالله،لا إله إلا الله،ولا نعبد إلا إياه ، له النعمة وله الفضل ،وله الثناء الحسن،لا إله إلا الله مخلصين له الدين ولو كره الكافرون
+   <div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+
+   - سبحان الله ، والحمد لله ، والله أكبر ( ثلاثاً وثلاثين ) لا إله إلا الله وحده لا شريك له ، له الملك وله الحمد وهو على كل شيء قدير 
+
+   <div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+   <h3>قراء سورة الإخلاص و المعوذتين</h3>
+        <h6>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</h6>
+قُلْ هُوَ اللَّهُ أَحَدٌ (1) اللَّهُ الصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ (4).
+
+      
+        <h6>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</h6>
+
+ قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (1) مِنْ شَرِّ مَا خَلَقَ (2) وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ (4) وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ (5).
+
+      
+        <h6>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</h6>
+
+ قُلْ أَعُوذُ بِرَبِّ النَّاسِ (1) مَلِكِ النَّاسِ (2) إِلَهِ النَّاسِ (3) مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (4) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (5) مِنَ الْجِنَّةِ وَالنَّاسِ (6).
+<h5>بعد كل صلاة </h5>
+	<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+<h3> قراءة آية الكرسي </h3>
+        <h6> أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ</h6>
+ اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ .  <h5>عقب كل صلاة </h5>      
+<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+
+- لا إله إلا الله وحده لا شريك له ، له الملك وله الحمد ، يحيي ويميت وهو على كل شئ قدير  <h5>عشر مرات بعد صلاة المغرب والصبح </h5>
+
+<div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+- اللهم إني أسألك علماً نافعاً ، ورزقاً طيباً ، وعملاً متقبلاً  <h5>بعد السلام من صلاة الفجر </h5>
+
+  <div id="marquee">
+		<marquee> ********</marquee>
+	</div>
+    </p>
+
+    
+
+<img src="images.jpg"  height="150px" width="1000px">
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

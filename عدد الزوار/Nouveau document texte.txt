@@ -1,0 +1,4 @@
+  <p align="center"><font face="MS Sans Serif" size="2" color="#FF0000">
+    <p align="center"><font face="MS Sans Serif" size="2" color="#FF0000">
+    <p align="center">
+    <img src="http://cgibin.erols.com/cgi-bin/Count.cgi?df=???? ???? ?????? ??? &ft=6&tr=N&dd=B&md=8"></p>
